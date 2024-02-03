@@ -1,0 +1,30 @@
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.reflected {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    padding: 0px 10px;
+}
+
+.reflected > * {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.reflected > :last-child {
+    transform: 
+    rotatex(180deg)
+    translateY(28px);
+    mask-image: linear-gradient() ;
+    -webkit-mask-image: linear-gradient(transparent 50%, white 90%) ;
+    opacity: 0.72;
+}

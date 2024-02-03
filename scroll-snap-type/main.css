@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: grey;
+    display: flex;
+    overflow-x: scroll;
+    padding: 24px;
+    width: 300px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px ;
+    border-radius: 8px;
+    gap: 12px;
+}
+
+.container .item {
+    flex: 0 0 100%;
+    padding: 24px;
+    border-radius: 8px;
+    scroll-snap-align: start;
+    background-color: purple;
+}

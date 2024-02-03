@@ -1,0 +1,53 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 100px;
+    background-color: black;
+    color: white;
+}
+
+body>main {
+    margin-inline: auto;
+    width: 80%;
+}
+
+p {
+    transition: all 0.3s;
+}
+
+body>main>div {
+    margin: 50px auto;
+    display: grid;
+    place-content: center;
+}
+
+img {
+    width: 300px;
+    aspect-ratio: 1/1;
+    border-radius: 5%;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+img:hover {
+    transform: scale(1.5);
+}
+
+body:has(img:hover) main>:not(div:has(img)) {
+    filter: blur(5px);
+}
+
+/* 
+body:has(img:hover) main>:not(img) {
+    filter: blur(8px);
+}
+ */
+
+/* body:has(img:hover) main>img:not(:active) {
+    filter: blur(8px);
+} */

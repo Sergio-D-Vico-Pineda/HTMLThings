@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    --textsize: 1.2em ; /* VARIABLE AQUI */
+}
+
+body {
+    display: grid;
+    place-content: center;
+    background-color: grey;
+    min-height: 100vh;
+}
+
+.a1 {
+    font-size: var(--textsize); /* COMO PONERLA AQUI */
+}
+
+.a2 {
+    font-size: var(--textsize);
+
+}
+
+.a3 {
+    font-size: var(--textsize);
+
+}
+
+.a4 {
+    font-size: var(--textsize);
+
+}
+
+.a5 {
+    font-size: var(--textsize);
+
+}

@@ -1,0 +1,46 @@
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 500px;
+    aspect-ratio: 1;
+    border-radius: 10px ;
+    display: grid;
+    place-items: center;
+    grid-template-areas: "main" ;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card > .image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 300ms, filter 400ms;
+}
+
+.card > * {
+    grid-area: main;
+}
+
+.card > .text {
+    opacity: 0.05;
+    color: white;
+    font-size: 1rem;
+    transition: opacity 400ms, transform 400ms;
+}
+
+.card:is(:hover, :focus) > .image {
+    transform: scale(1.1);
+    filter: brightness(0.5);
+}
+
+.card:is(:hover, :focus) > .text {
+    transform: scale(1.1);
+    opacity: 1;
+}

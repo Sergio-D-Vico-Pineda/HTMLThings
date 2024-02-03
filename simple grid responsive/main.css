@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 20px;
+}
+
+.class {
+    background-color: lightsteelblue;
+    height: 150px;
+    display: grid;
+    place-items: center;
+}

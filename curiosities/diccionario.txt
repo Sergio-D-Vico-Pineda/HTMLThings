@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Llista de definicions</title>
+<meta charset="utf-8" />
+</head>
+<body>
+<h2>Glossari</h2>
+<dl>
+<dt>Cotxe</dt>
+<dd>Vehicle automòbil destinat al transport de persones</dd>
+<dt>Tren</dt>
+<dd>Mitjà de transport que circula sobre raïls</dd>
+</dl>
+</body>
+</html>

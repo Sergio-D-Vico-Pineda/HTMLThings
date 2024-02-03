@@ -1,0 +1,15 @@
+body {
+    background-color: black;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    gap: 20px;
+}
+
+.cards>* {
+    height: 200px;
+    background-color: blue;
+    border-radius: 8px;
+}

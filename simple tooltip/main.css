@@ -1,0 +1,36 @@
+body {
+    display: grid;
+    place-items: center;
+    background-color: grey;
+}
+
+#box {
+    background-color: salmon;
+    position: relative;
+    cursor: pointer;
+    padding: 7px;
+    font-size: 1.5rem;
+    border-radius: 4px;
+}
+
+#tip {
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: orange;
+    color: white;
+    white-space: nowrap;
+    padding: 5px 10px;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#box:hover #tip {
+    top: 120%;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}

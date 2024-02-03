@@ -1,0 +1,55 @@
+body {
+    display: grid;
+    place-items: center;
+    background-color: darkgrey;
+}
+
+button#btn {
+    padding: 5px 10px;
+    font-size: large;
+    transition: all 0.5s ease;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px 1px;
+
+    &:hover {
+        background-color: red;
+        /* box Shadow */
+        box-shadow: 0 0 10px 1px rgba(255, 0, 0, 0.9);
+    }
+}
+
+div#tooltip {
+    padding: 1px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border: 2px solid blueviolet;
+
+    /* Transition */
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    /* Position */
+    top: 0px;
+    left: 0px;
+
+    &::backdrop {
+        background-color: rgba(0, 0, 0, 0.589);
+        filter: grayscale(100%);
+        backdrop-filter: blur(5px);
+    }
+
+    /* Transition */
+    &:popover-open {
+        opacity: 1;
+    }
+}
+
+/* Position */
+[popover] {
+    inset: unset;
+    margin: unset;
+}
